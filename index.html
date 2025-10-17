@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Diaz Café</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1 class="logo">Diaz Café</h1>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#faqs">FAQs</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <h2>Welcome to Diaz Café</h2>
+      <p>Freshly brewed coffee, baked goods, and cozy vibes.</p>
+      <a href="#services" class="btn">Explore Our Services</a>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="about">
+    <div class="about-container">
+      <div class="about-text">
+        <h2>About Us</h2>
+        <p>
+          At Diaz Café, every cup tells a story. We source our beans from local
+          farmers and roast them with passion. From smooth espressos to
+          creamy lattes, we craft moments of comfort, one brew at a time.
+          Whether you’re here to work, relax, or connect, we promise warmth in
+          every sip and a space that feels like home.
+        </p>
+
+        <div class="about-btn">
+        <a href="#menu" class="btn">Explore Our Menu</a>
+        </div>
+
+      </div>
+
+      
+
+      <div class="about-image">
+        <img src="https://images.unsplash.com/photo-1541167760496-1628856ab772?auto=format&fit=crop&w=800&q=80" alt="Cappuccino" />
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services" class="services">
+    <h2>Our Services</h2>
+    <div class="services-grid">
+      <div class="service-card">
+        <h3>Freshly Brewed Coffee</h3>
+        <p>We serve a wide range of premium coffees, from espressos to cold brews, made with care and love.</p>
+      </div>
+      <div class="service-card">
+        <h3>Pastries & Snacks</h3>
+        <p>Enjoy freshly baked croissants, muffins, and cookies. perfect companions for your coffee moments.</p>
+      </div>
+      <div class="service-card">
+        <h3>Custom Orders</h3>
+        <p>We cater to your events and special days with custom blends and assorted pastries upon request.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- MENU -->
+  <section id="menu" class="menu">
+    <h2>Our Menu</h2>
+    <div class="menu-grid">
+      <div class="menu-item">
+        <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93" alt="Espresso" />
+        <h3>Espresso</h3>
+        <p>Rich and bold classic espresso shot.</p>
+        <span class="price">$3.50</span>
+      </div>
+
+      <div class="menu-item">
+        <img src="https://images.unsplash.com/photo-1541167760496-1628856ab772?auto=format&fit=crop&w=800&q=80" alt="Cappuccino" />
+        <h3>Cappuccino</h3>
+        <p>Perfect balance of espresso, steamed milk, and foam.</p>
+        <span class="price">$4.20</span>
+      </div>
+
+      <div class="menu-item">
+        <img src="https://images.unsplash.com/photo-1511920170033-f8396924c348" alt="Croissant" />
+        <h3>Butter Croissant</h3>
+        <p>Freshly baked, golden, and flaky croissant.</p>
+        <span class="price">$2.80</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faqs" class="faqs">
+    <h2>Frequently Asked Questions</h2>
+    <div class="faq-container">
+      <div class="faq">
+        <h3>Do you offer dairy-free milk options?</h3>
+        <p>Yes! We have almond, oat, and soy milk options for all drinks.</p>
+      </div>
+      <div class="faq">
+        <h3>Do you have free Wi-Fi?</h3>
+        <p>Absolutely. Feel free to enjoy your coffee and connect online anytime.</p>
+      </div>
+      <div class="faq">
+        <h3>Can I place an order online?</h3>
+        <p>We’re working on it! For now, you can call or visit our café to order ahead.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+  <div class="footer-container">
+    <div class="footer-column">
+      <h3>Diaz Café</h3>
+      <p>Brewed with love and served with warmth.</p>
+    </div>
+
+    <div class="footer-column">
+      <h4>Quick Links</h4>
+      <ul class="footer-links">
+        <li><a href="index.html#home">Home</a></li>
+        <li><a href="index.html#about">About Us</a></li>
+        <li><a href="index.html#services">Services</a></li>
+        <li><a href="index.html#faqs">FAQs</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <p class="footer-bottom">&copy; 2025 Diaz Café. All rights reserved.</p>
+</footer>
+
+
+  <script>
+    // Sticky header opacity
+    window.addEventListener('scroll', () => {
+      const header = document.querySelector('header');
+      if (window.scrollY > 50) {
+        header.classList.add('scrolled');
+      } else {
+        header.classList.remove('scrolled');
+      }
+    });
+  </script>
+</body>
+</html>
